@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fbfbff;
+  color: #4c5c68;
+  font-family: "Gill Sans", sans-serif;
+  min-height: 100vh;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  height: 10vh;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  min-height: 85vh;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  font-size: 1.2rem;
+  width: 30%;
+  height: 35rem;
+}
+
+.color-picker-container, .draw-button, .eraser-button, .clear-button, .slider-label, .options-container .slider {
+  text-align: center;
+  width: 12rem;
+}
+
+.color-picker-container .color-picker, .draw-button, .eraser-button, .clear-button, .slider {
+  border: 2px solid #e2e2e2;
+  border-radius: 0.7rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  cursor: pointer;
+}
+
+.draw-button, .eraser-button, .clear-button {
+  padding: 1rem;
+}
+
+.color-picker-container .color-picker:hover, .draw-button:hover, .eraser-button:hover, .clear-button:hover {
+  transform: scale(1.1);
+}
+
+.options-container .color-picker-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.options-container .color-picker-container .color-picker {
+  width: 6rem;
+  height: 6rem;
+}
+.options-container .active {
+  color: #398ee7;
+}
+
+.board-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+}
+
+.board-container .board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 35rem;
+  height: 35rem;
+  background-color: #eee;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 5px 9px;
+  border: 2px solid #e2e2e2;
+  border-radius: 0.5rem;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='35' height='42' viewport='0 0 100 100' style='fill:black;font-size:21px;rotate:90deg'><text y='50%'>✏️</text></svg>")
+      16 0,
+    auto;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+}
+
+footer a {
+  text-decoration: none;
+  color: #4c5c68;
+  margin-left: 0.3rem;
+}
